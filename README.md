@@ -11,6 +11,7 @@ s. README.txt
 The original license applies.  
 
 Also, "Please cite the following paper when you use the data set or code:  
+
 @incollection{SocherChenManningNg2013,
 title = {{Reasoning With Neural Tensor Networks For Knowledge Base Completion}},
 author = {Richard Socher and Danqi Chen and Christopher D. Manning and Andrew Y. Ng},
