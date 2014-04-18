@@ -22,6 +22,8 @@ if (params.data_no == 0)
     params.data_path = '../data/Wordnet/';
 elseif (params.data_no == 1)
     params.data_path = '../data/Freebase/';
+elseif (params.data_no == 2)
+    params.data_path = '../data/Weltmodell/';
 end
 
 %% Read from entities.txt
@@ -61,6 +63,11 @@ for i = 1 : params.num_train
     train_data(i, 3) = entity_dict(s_tmp{1}{3});
 end
 disp('Done.');
+
+disp('Initialize embedding...');
+if params.init_no == 0
+    initialization;
+end
 
 load([params.data_path '/initEmbed.mat']);    
 params.tree = tree;
