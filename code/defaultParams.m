@@ -1,6 +1,6 @@
 if ~exist('params','var')
-    params.data_no = 0; % 0 - WordNet, 1 - FreeBase
-    params.init_no = 1; % 0 - random, 1 - Turian et al
+    params.data_no = 2; % 0 - WordNet, 1 - FreeBase, 2 - Weltmodell
+    params.init_no = 0; % 0 - random, 1 - Turian et al
     params.num_iter = 500; 
     params.train_both = 0;
 
