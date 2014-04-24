@@ -2,7 +2,7 @@ if (params.init_no == 1)
     E = We;
 else
     r = 0.001;
-    E = rand(params.embedding_size, params.num_entities) * 2 * r - r;
+    E = rand(params.embedding_size, params.num_words) * 2 * r - r;
 end
 
 r = 1 / sqrt(params.embedding_size * 2);
