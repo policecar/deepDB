@@ -64,19 +64,21 @@ for i = 1 : params.num_train
 end
 disp('Done.');
 
-disp('Initialize embedding...');
-if params.init_no == 0
-    initialization;
+if params.init_no == 1
+	load([params.data_path '/initEmbed.mat']);    
+	params.tree = tree;
+	params.num_words = length(words);
+	clear tree; 
 end
-
-load([params.data_path '/initEmbed.mat']);    
-params.tree = tree;
-params.num_words = length(words);
-clear tree; 
+% else require that param.num_words is set in defaultParams
 
 disp(params);
 initialization;
 save([output_folder '0.mat'], 'params');
+% save([output_folder '0.mat'], 'params', '-v7.3');
+We = E;
+save([output_folder 'initEmbed.mat'], 'We');
+clear We;
 
 if strcmp(params.gradient_checking, 'on')
     lst = 1:10;
