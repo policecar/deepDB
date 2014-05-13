@@ -17,7 +17,7 @@ cd deepDB/code/
 train
 ```
 
-Consider customizing your parameters in defaultParams.
+Consider customizing your parameters in defaultParams.m.
 
 ### License
 
