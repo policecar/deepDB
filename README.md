@@ -6,6 +6,19 @@ Richard Socher, Danqi Chen, et al.'s code of a [neural tensor network](http://ww
 
 s. README.txt
 
+For the impatient:
+
+```shell
+matlab
+```
+
+```matlab
+cd deepDB/code/
+train
+```
+
+Consider customizing your parameters in defaultParams.
+
 ### License
 
 The original license applies.  
